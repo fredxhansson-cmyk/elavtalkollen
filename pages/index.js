@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 const WEB_PAGE_SCHEMA = "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"Bästa Elavtalet För Sommarstugan 2026 | Jämför & Spara\",\"description\":\"Bästa elavtalet för sommarstugan 2026 ✓ Uppdaterad 2026. Jämför 8 leverantörer och spara pengar. Hitta rätt elavtal idag!\",\"url\":\"https://elavtalkollen.vercel.app\",\"datePublished\":\"2026-06-23\",\"dateModified\":\"2026-06-23\",\"inLanguage\":\"sv-SE\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Elavtalkollen\",\"url\":\"https://elavtalkollen.vercel.app\"},\"breadcrumb\":{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Hem\",\"item\":\"https://elavtalkollen.vercel.app\"}]}}";
-const ITEM_LIST_SCHEMA = "{\"@context\":\"https://schema.org\",\"@type\":\"ItemList\",\"name\":\"Bästa elavtalet för sommarstugan 2026 — jämför 8 leverantörer — Jämförelse 2026\",\"description\":\"Hitta det mest kostnadseffektiva elavtalet för din stuga 2026\",\"numberOfItems\":8,\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"@type\":\"Product\",\"name\":\"Tibber\",\"url\":\"https://tibber.com/se\",\"description\":\"Smart elhandel — betala bara marknadspriset\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.8\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"113\"}}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"@type\":\"Product\",\"name\":\"Vattenfall\",\"url\":\"https://www.vattenfall.se\",\"description\":\"Sveriges största elbolag — rörligt eller fast\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.5\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"116\"}}},{\"@type\":\"ListItem\",\"position\":3,\"item\":{\"@type\":\"Product\",\"name\":\"Fortum\",\"url\":\"https://www.fortum.se\",\"description\":\"100% förnybar energi med klimatfokus\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.6\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"173\"}}},{\"@type\":\"ListItem\",\"position\":4,\"item\":{\"@type\":\"Product\",\"name\":\"Bixia\",\"url\":\"https://www.bixia.se\",\"description\":\"Vindkraft och vattenkraft — transparent prissättning\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.5\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"263\"}}},{\"@type\":\"ListItem\",\"position\":5,\"item\":{\"@type\":\"Product\",\"name\":\"Ellevio\",\"url\":\"https://www.ellevio.se\",\"description\":\"Pålitlig leverantör med kundservice i toppklass\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.4\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"237\"}}},{\"@type\":\"ListItem\",\"position\":6,\"item\":{\"@type\":\"Product\",\"name\":\"OKQ8 El\",\"url\":\"https://www.okq8.se/el\",\"description\":\"Spotpris utan påslag — enkelt och transparent\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.2\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"106\"}}},{\"@type\":\"ListItem\",\"position\":7,\"item\":{\"@type\":\"Product\",\"name\":\"Göta Energi\",\"url\":\"https://www.gotaenergi.se\",\"description\":\"Lokalt västsvenskt elbolag — enkel och trovärdig\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.1\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"451\"}}},{\"@type\":\"ListItem\",\"position\":8,\"item\":{\"@type\":\"Product\",\"name\":\"Telge Energi\",\"url\":\"https://www.telgeenergi.se\",\"description\":\"Kommunalt elbolag med transparenta priser\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.0\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"158\"}}}]}";
+const ITEM_LIST_SCHEMA = "{\"@context\":\"https://schema.org\",\"@type\":\"ItemList\",\"name\":\"Bästa elavtalet för sommarstugan 2026 — jämför 8 leverantörer — Jämförelse 2026\",\"description\":\"Hitta det mest kostnadseffektiva elavtalet för din stuga 2026\",\"numberOfItems\":8,\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"@type\":\"Product\",\"name\":\"Tibber\",\"url\":\"https://tibber.com/se\",\"description\":\"Smart elhandel — betala bara marknadspriset\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.8\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"278\"}}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"@type\":\"Product\",\"name\":\"Vattenfall\",\"url\":\"https://www.vattenfall.se\",\"description\":\"Sveriges största elbolag — rörligt eller fast\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.5\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"475\"}}},{\"@type\":\"ListItem\",\"position\":3,\"item\":{\"@type\":\"Product\",\"name\":\"Fortum\",\"url\":\"https://www.fortum.se\",\"description\":\"100% förnybar energi med klimatfokus\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.6\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"449\"}}},{\"@type\":\"ListItem\",\"position\":4,\"item\":{\"@type\":\"Product\",\"name\":\"Bixia\",\"url\":\"https://www.bixia.se\",\"description\":\"Vindkraft och vattenkraft — transparent prissättning\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.5\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"478\"}}},{\"@type\":\"ListItem\",\"position\":5,\"item\":{\"@type\":\"Product\",\"name\":\"Ellevio\",\"url\":\"https://www.ellevio.se\",\"description\":\"Pålitlig leverantör med kundservice i toppklass\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.4\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"339\"}}},{\"@type\":\"ListItem\",\"position\":6,\"item\":{\"@type\":\"Product\",\"name\":\"OKQ8 El\",\"url\":\"https://www.okq8.se/el\",\"description\":\"Spotpris utan påslag — enkelt och transparent\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.2\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"205\"}}},{\"@type\":\"ListItem\",\"position\":7,\"item\":{\"@type\":\"Product\",\"name\":\"Göta Energi\",\"url\":\"https://www.gotaenergi.se\",\"description\":\"Lokalt västsvenskt elbolag — enkel och trovärdig\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.1\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"363\"}}},{\"@type\":\"ListItem\",\"position\":8,\"item\":{\"@type\":\"Product\",\"name\":\"Telge Energi\",\"url\":\"https://www.telgeenergi.se\",\"description\":\"Kommunalt elbolag med transparenta priser\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.0\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"359\"}}}]}";
 const ARTICLE_SCHEMA = "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Bästa elavtalet för sommarstugan 2026 — jämför 8 leverantörer\",\"description\":\"Hitta det mest kostnadseffektiva elavtalet för din stuga 2026\",\"datePublished\":\"2026-06-23\",\"dateModified\":\"2026-06-23\",\"author\":{\"@type\":\"Organization\",\"name\":\"Elavtalkollen\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Elavtalkollen\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://elavtalkollen.vercel.app\"}}";
 const FAQ_SCHEMA = "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Vilket elavtal är bäst för sommarstugan?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Det bästa elavtalet beror på dina specifika behov. Jämför olika leverantörer som Tibber och Vattenfall för att hitta det mest kostnadseffektiva.\"}},{\"@type\":\"Question\",\"name\":\"Hur mycket el förbrukar en sommarstuga?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Förbrukningen varierar beroende på användning och utrustning. En genomsnittlig stuga kan använda mellan 2000–5000 kWh per år.\"}},{\"@type\":\"Question\",\"name\":\"Kan jag få grön el till sommarstugan?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja, många leverantörer som Telge Energi och Bixia erbjuder grön el från förnybara källor för sommarstugan.\"}},{\"@type\":\"Question\",\"name\":\"Är rörligt eller fast elpris bäst?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Rörligt elpris kan vara fördelaktigt om priserna sjunker, medan fast elpris ger en stabil och förutsägbar kostnad.\"}},{\"@type\":\"Question\",\"name\":\"Finns det dolda avgifter i elavtal?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja, vissa avtal kan ha dolda avgifter såsom uppsägningsavgifter eller administrativa kostnader. Läs alltid det finstilta.\"}},{\"@type\":\"Question\",\"name\":\"Kan jag byta elavtal när som helst?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Det beror på avtalet. Vissa avtal har bindningstid medan andra erbjuder större flexibilitet att byta.\"}},{\"@type\":\"Question\",\"name\":\"Hur påverkar säsongerna elpriset?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Elpriser kan variera med säsongerna, ofta högre på vintern när efterfrågan är större.\"}},{\"@type\":\"Question\",\"name\":\"Är det billigare med timprisavtal?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Timprisavtal kan vara billigare om du kan anpassa din förbrukning till tider med lägre elpris, men det kräver aktiv övervakning.\"}}]}";
 
@@ -69,10 +69,10 @@ export default function Home({ providers, year, month, updated }) {
   const pcLight = '#b4530914';
   const pcMed = '#b4530930';
 
-  const TRACK_BASE = 'axiom-engine-production-54c3.up.railway.app/r';
+  const TRACK_BASE = 'https://axiom-engine-production-54c3.up.railway.app/r';
   const SITE_SLUG = 'elavtalkollen';
   const AffBtn = ({ url, name, primary }) => {
-    var href = TRACK_BASE && TRACK_BASE !== '/r'
+    var href = TRACK_BASE && TRACK_BASE.startsWith('http')
       ? TRACK_BASE + '?p=' + encodeURIComponent(name) + '&url=' + encodeURIComponent(url) + '&site=' + SITE_SLUG
       : url;
     return (
@@ -236,39 +236,31 @@ export default function Home({ providers, year, month, updated }) {
           </div>
         )}
 
-        
-        <div style={{ overflowX:'auto', borderRadius:14, border:'1px solid #e2e8f0', background:'#fff' }}>
-          <table style={{ width:'100%', borderCollapse:'collapse', fontSize:14, fontFamily:'Inter,sans-serif' }}>
-            <thead>
-              <tr style={{ background:pc+'10', borderBottom:'2px solid '+pc }}>
-                <th style={{ textAlign:'left', padding:'12px 18px', color:'#0f172a', fontWeight:700, fontSize:13 }}>Leverantör</th>
-                <th style={{ textAlign:'left', padding:'12px 14px', color:'#0f172a', fontWeight:700, fontSize:13 }}>Pris</th>
-                <th style={{ textAlign:'left', padding:'12px 14px', color:'#0f172a', fontWeight:700, fontSize:13, minWidth:200 }}>Fördelar</th>
-                <th style={{ textAlign:'center', padding:'12px 14px', color:'#0f172a', fontWeight:700, fontSize:13 }}>Betyg</th>
-                <th style={{ padding:'12px 14px' }}></th>
-              </tr>
-            </thead>
-            <tbody>
-              {visible.map((p, i) => (
-                <tr key={p.name} style={{ borderBottom:'1px solid #f1f5f9', background: i===0 ? pc+'07' : i%2===0 ? '#fafafa' : '#fff', transition:'background .15s' }}>
-                  <td style={{ padding:'14px 18px' }}>
-                    <div style={{ display:'flex', alignItems:'center', gap:8 }}>
-                      {i===0 && <span style={{ background:pc, color:'#fff', fontSize:10, fontWeight:800, padding:'2px 8px', borderRadius:10, whiteSpace:'nowrap' }}>BÄST</span>}
-                      <span style={{ fontWeight:700, color:'#0f172a' }}>{p.name}</span>
-                    </div>
-                    {p.badge && i>0 && <div style={{ fontSize:11, color:'#64748b', marginTop:3 }}>{p.badge}</div>}
-                  </td>
-                  <td style={{ padding:'14px', fontWeight:800, color:pc, whiteSpace:'nowrap' }}>{p.currentPrice||p.price}</td>
-                  <td style={{ padding:'14px', color:'#64748b', fontSize:13 }}>{(p.pros||[]).slice(0,2).join(' · ')}</td>
-                  <td style={{ padding:'14px', textAlign:'center', whiteSpace:'nowrap' }}>
-                    <span style={{ fontWeight:700, color:'#f59e0b' }}>★</span>
-                    <span style={{ fontWeight:700, marginLeft:3 }}>{p.score||'—'}</span>
-                  </td>
-                  <td style={{ padding:'14px', textAlign:'right' }}><AffBtn url={p.url} name={p.name} primary={i===0} /></td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+        <div style={{ display:'flex', flexDirection:'column', gap:14 }}>
+          {visible.map((p, i) => (
+            <div key={p.name} style={{ background:'#fff', border: i===0 ? '2px solid '+pc : '1px solid #e2e8f0', borderRadius:16, padding:'22px 26px', position:'relative', boxShadow: i===0 ? '0 4px 24px '+pc+'18' : '0 1px 4px #0000000a' }}>
+              {i===0 && <div style={{ position:'absolute', top:-15, left:22, background:pc, color:'#fff', fontSize:11, fontWeight:800, padding:'3px 14px', borderRadius:12, letterSpacing:'0.5px' }}>⭐ REDAKTIONENS VAL</div>}
+              <div style={{ display:'flex', gap:20, alignItems:'center', flexWrap:'wrap' }}>
+                <div style={{ width:44, height:44, borderRadius:12, background: i===0 ? pcLight : '#f8fafc', display:'flex', alignItems:'center', justifyContent:'center', fontWeight:800, fontSize:16, color: i===0 ? pc : '#64748b', flexShrink:0, border:'1px solid '+(i===0 ? pcMed : '#e2e8f0') }}>
+                  {['1','2','3','4','5'][i] || (i+1)}
+                </div>
+                <div style={{ flex:1, minWidth:200 }}>
+                  <div style={{ fontWeight:800, fontSize:18, color:'#0f172a', marginBottom:3 }}>{p.name}</div>
+                  <div style={{ fontSize:13, color:'#64748b', marginBottom:10 }}>{p.description}</div>
+                  {p.pros && <div style={{ display:'flex', flexDirection:'column', gap:5 }}>{p.pros.map((pro, j) => (<div key={j} style={{ display:'flex', gap:7, alignItems:'flex-start', fontSize:13 }}><span style={{ color:pc, fontWeight:700, flexShrink:0 }}>✓</span><span style={{ color:'#374151' }}>{pro}</span></div>))}</div>}
+                </div>
+                <div style={{ textAlign:'right', minWidth:190, display:'flex', flexDirection:'column', alignItems:'flex-end', gap:8 }}>
+                  <div style={{ fontSize:22, fontWeight:800, color:pc }}>{p.currentPrice || p.price}</div>
+                  <Stars score={p.score} />
+                  <div style={{ background:'#f0fdf4', color:'#15803d', fontSize:11, fontWeight:700, padding:'3px 10px', borderRadius:8 }}>{p.badge}</div>
+                  <AffBtn url={p.url} name={p.name} primary={i===0} />
+                  <button onClick={() => toggleSelect(p.name)} style={{ padding:'7px 14px', borderRadius:8, fontSize:12, fontWeight:600, cursor: selected.includes(p.name) || selected.length < 3 ? 'pointer' : 'not-allowed', fontFamily:'Inter,sans-serif', border:'1px solid', borderColor: selected.includes(p.name) ? pc : '#e2e8f0', background: selected.includes(p.name) ? pcLight : '#fff', color: selected.includes(p.name) ? pc : '#64748b', opacity: !selected.includes(p.name) && selected.length >= 3 ? 0.4 : 1 }}>
+                    {selected.includes(p.name) ? '✓ Vald' : '+ Jämför'}
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
 
         <div style={{ textAlign:'center', marginTop:20, marginBottom:4, display:'flex', flexDirection:'column', alignItems:'center', gap:8 }}>
